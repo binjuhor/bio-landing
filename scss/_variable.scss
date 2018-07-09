@@ -1,0 +1,62 @@
+$body-font: 'Nunito Sans', sans-serif;
+$title-font: 'Enriqueta', serif;
+$icon-font: "FontAwesome";
+$main-color: #20303c;
+$active-color: #c0c8b9;
+$body-color: #000;
+$border-color: #e2e2e2;
+$link-color: #7a7a79;
+$white: #fff;
+$main-bg: #c0c8b9;
+$body-bg:#e8e3dc;
+
+%nav{
+    padding-left: 0;
+    list-style: none;
+    ul{
+        padding-left: 0;
+        list-style: none;
+    }
+}
+%round{
+    content:"";
+    width:  rem(12px);
+    height: rem(12px);
+    display: inline-block;
+    border: 2px solid $main-color;
+    border-radius: round(50px);
+    margin-right: 10px;
+    cursor: pointer;
+    @include transition(all .3s);
+    &:hover{
+        background: $main-color;
+    }
+}
+%round-light{
+    @extend %round;
+    border:1px solid $main-color;
+    position: absolute;
+    right: 0;
+    top: 5px;
+    &:hover{
+        background: transparent;
+    }
+}
+%line-horizontal{
+    content:"";
+    position: absolute;
+    border-top: 1px solid $main-color;
+    width: rem(60px);
+    position: absolute;
+    top: 15px;
+    right: rem(-60px);
+}
+%line-vertical{
+    position: absolute;
+    @extend %line-horizontal;
+    border-top: none;
+    width: 1px;
+    border-left: 1px solid $main-color;
+    height: rem(60px);
+    top: 15px;
+}

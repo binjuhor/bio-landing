@@ -1,0 +1,30 @@
+{
+  "name": "portfolio.loc.binjuhor.com",
+  "version": "1.0.0",
+  "description": "Just a developer portfolio.",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/binjuhor/portfolio-new.git"
+  },
+  "keywords": [
+    "developer",
+    "portfolio"
+  ],
+  "author": "binjuhor",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/binjuhor/portfolio-new/issues"
+  },
+  "homepage": "https://gitlab.com/binjuhor/portfolio-new#README",
+  "dependencies": {
+    "bootstrap": "^4.1.1",
+    "gsap": "^2.0.1",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^4.0.1",
+    "sass-rem": "^2.0.1"
+  }
+}
