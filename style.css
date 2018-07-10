@@ -6485,7 +6485,11 @@ a {
     transform: translateX(-50%);
     -webkit-transform: translateX(-50%);
     -moz-transform: translateX(-50%);
-    border-left: 1px solid #20303c; }
+    border-left: 1px solid #20303c;
+    display: none; }
+    @media (min-width: 768px) {
+      .pagecontent::after {
+        display: block; } }
   .pagecontent::before {
     top: 3.0625rem;
     left: 50%;
@@ -6550,7 +6554,7 @@ a {
     left: -1.875rem; }
 
 .text-left .intro__subtitle {
-  padding-left: 3.75rem; }
+  padding-left: 6 0rem; }
 
 /**
  * 06. BIO.

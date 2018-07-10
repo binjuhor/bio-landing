@@ -183,6 +183,10 @@ a{
         -webkit-transform: translateX(-50%);
         -moz-transform: translateX(-50%);
         border-left: 1px solid $main-color;
+        display: none;
+        @include media-breakpoint-up('md'){
+            display: block;
+        }
     }
     &::before{
         @extend %round-light;
@@ -277,7 +281,7 @@ a{
             }
         }
         &__subtitle{
-            padding-left: rem(60px);
+            padding-left: rem(6 0px);
         }
     }
 }
