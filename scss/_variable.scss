@@ -38,6 +38,11 @@ $body-bg:#e8e3dc;
     position: absolute;
     right: 0;
     top: 5px;
+    @include media-breakpoint-down('sm'){
+        position: absolute;
+        left: 50%;
+        top: -10px;
+    }
     &:hover{
         background: transparent;
     }
